@@ -1,0 +1,87 @@
+
+#content {
+  height: 500px;
+  background: #EFEFEF;
+  text-align: center;
+  margin-top: -21px;
+}
+
+#minesweeper {
+  margin: auto;
+  padding: 20px;
+  width: 350px;
+}
+
+#gameboard {
+    margin: auto;
+    text-align: center;
+    width: 40%;
+}
+.clock {
+
+  float: left;
+}
+.score {
+  float: right;
+}
+
+.board-container {
+  padding: 0;
+  margin: 0;
+
+}
+.board {
+  width: 295px;
+  clear: both;
+  
+}
+.board > div {
+  background: #ececec;
+  border: 1px solid #d9d9d9;
+  float: left;
+  height: 30px;
+  width: 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+  position: relative;
+  top: 6px;
+  left: 6px;
+  text-align: center;
+}
+
+.board > div.inactive { 
+  border: 1px solid #D4D4D4;
+  padding: 2px;
+}
+.board > div.active { 
+  background: #DCDCDC;
+  border-width:3px; 
+  border-color: #EAEAEA #B8B8B8 #ACACAC #E4E4E4
+}
+
+.board > div.mine {
+  background-color: #ececec;
+  border: 1px solid #d9d9d9;
+  background: rgba(0, 0, 0, 0) url("images/mine.png") no-repeat scroll 0 0 / 16px 16px;
+  background-position: left 4px top 4px;
+}
+
+.board > div.inactive > span.mine {
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: rgba(0, 0, 0, 0) url("images/mine.png") no-repeat scroll 0 0 / 16px 16px;
+  background-position: left 4px top 4px;
+}
+.board span.prox-1 {
+   color: #375BF0;
+}
+.board span.prox-2 {
+   color: #21921F;
+}
+.board span.prox-3 {
+   color: #C71111;
+}
+
+
+
